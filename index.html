@@ -15,7 +15,7 @@
     </body>
 
     <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="Images/icon.png">Icon</a>
+        <img src="Images/icon.png" class="img-fluid" width="48" height="48">
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,9 +37,40 @@
     <header class="page-header header container-fluid">
         <div class="overlay"></div>
         <div class="description">
-            <h1>Welcome to the Landing Page!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.</p>
+            <h1>Hey! I'm Jake</h1>
+            <p>Welcome to my website! Click below to find out more!</p>
+            <button class="btn btn-outline-secondary btn-lg">About Me!</button>
         </div>
     </header>
+
+    <div class="container features">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 class="feature-title">My GitHub</h3>
+                <a href="https://github.com/JakeG2004"><img src="Images/github.png" class="img-fluid"></a>
+                <p>This is where I keep all of my code, from school projects to my own games and discord bots. All of the code is on GitHub.</p>
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 class="feature-title">My itch</h3>
+                <a href="https://socksnsandles.itch.io/"><img src="Images/itch.png" class="img-fluid"></a>
+                <p>All of my games go up on itch.io! Go check out my latest!</p>
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h3 class="feature-title">Get in Touch!</h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name" name="">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email Address" name="email">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="4"></textarea>
+                </div>
+                <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+            </div>
+        </div>
+    </div>
     
 </html>
