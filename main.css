@@ -21,6 +21,12 @@ body {
 .navbar-collapse {
     justify-content: flex-end;
 }
+.custom-nav .nav-item .nav-link {
+    color: #b446b4;
+}
+.custom-container {
+    min-width: 60%; /* Adjust the width as needed */
+}
 .header {
     background-image: url('Images/bg.png');
     background-size: cover;
@@ -206,4 +212,13 @@ body {
     font-size: 1.3rem;
     margin-bottom: 0;
     text-transform: uppercase;
+}
+.Centered {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text within the div */
+    margin: 0 auto; /* Center the div horizontally */
+    padding: 0 20px; /* Add padding as needed */
 }

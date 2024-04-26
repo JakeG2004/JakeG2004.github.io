@@ -35,6 +35,10 @@ body {
     top: 0;
     background: rgba(0, 0, 0, 0.0);
 }
+.color2 {
+    background-color: #efc5f5;
+    min-width: 100%;
+}
 .description {
 	left: 50%;
 	position: absolute;
