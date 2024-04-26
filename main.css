@@ -47,6 +47,11 @@ body {
 	color: #b446b4;
     background: rgba(0, 0, 0, 0.6);
 }
+.description label {
+    display: inline-block;
+	color: #b446b4;
+    background: rgba(0, 0, 0, 0.6);
+}
 .description p {
 	color: #fff;
 	font-size: 1.3rem;

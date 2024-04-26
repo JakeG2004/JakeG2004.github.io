@@ -207,3 +207,9 @@ body {
     margin: 0 auto; /* Center the div horizontally */
     padding: 0 20px; /* Add padding as needed */
 }
+.Centered button {
+    border:1px solid #b446b4;
+    background:#b446b4;
+    border-radius: 0;
+    color:#fff;
+}
