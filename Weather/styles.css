@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
+
+body {
+    font-family: "Cascadia Mono", sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2017%2F03%2F28%2F409091-sky-clouds.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.search-container {
+    /*max-width: 400px;*/
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 10px;
+    box-sizing: border-box; /* Ensures padding and borders are part of the width */
+    display: flex;
+    align-items: flex-start; /* Vertically aligns items in the center */
+    gap: 10px; /* Adds space between the input and the button */
+}
+
+.search-container input[type="text"] {
+    flex: 1;
+    margin: 0;
+}
+
+.search-container button {
+    margin: 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 72px;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove padding if necessary */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Cascadia Mono", sans-serif;
+}
+
+button {
+    background-color: #ff3c66;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Cascadia Mono", sans-serif;
+}
+
+.weather-info {
+    background-color: rgba(255, 255, 255, 0.32);
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-content: center;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.temp {
+    font-size: 36px;
+}
+
+.description {
+    font-size: 36px;
+}
+
+.wind-speed {
+    font-size: 36px;
+}
+
+.weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.forecast-info {
+    background-color: rgba(255, 255, 255, 0.32);
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-content: center;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    /*background-color: #f0f0f032;*/
+    border-radius: 10px;
+}
+
+.forecast-item {
+    border-radius: 10px;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f0f0f032;
+}
+
+.split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    width: 66%;
+}
+
+.right {
+    right: 0;
+    width: 33%
+}

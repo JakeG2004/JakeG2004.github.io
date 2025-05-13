@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="split left">
+            <div class="weather-info">
+                <h2 class="location" id="location"></h2>
+                <hr>
+                <p class="temp" id="temperature"></p>
+                <p class="wind-speed" id="wind-speed"></p> 
+                <p class="description" id="description"></p>
+                <img class="weather-icon" src="" id="weatherIcon" width="64" height="64">
+            </div>
+            <br>
+            <div class="forecast-info">
+                <h2 class="forecast" id="forecast">Forecast</h2>
+                <hr>
+                <div class="forecast-container">
+                    <div class="forecast-item">
+                        <h3>Day</h3>
+                        <img class="forecast-icon" src="" id="forecast-icon" width="64" height = 64>
+                        <p class="forecast-temp">14/72</p>
+                    </div>
+                    <div class="forecast-item">
+                        <h3>Day</h3>
+                        <img class="forecast-icon" src="" id="forecast-icon" width="64" height = 64>
+                        <p class="forecast-temp">14/72</p>
+                    </div>
+                    <div class="forecast-item">
+                        <h3>Day</h3>
+                        <img class="forecast-icon" src="" id="forecast-icon" width="64" height = 64>
+                        <p class="forecast-temp">14/72</p>
+                    </div>
+                    <div class="forecast-item">
+                        <h3>Day</h3>
+                        <img class="forecast-icon" src="" id="forecast-icon" width="64" height = 64>
+                        <p class="forecast-temp">14/72</p>
+                    </div>
+                    <div class="forecast-item">
+                        <h3>Day</h3>
+                        <img class="forecast-icon" src="" id="forecast-icon" width="64" height = 64>
+                        <p class="forecast-temp">14/72</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="split right">
+            <div class="search-container">
+                <input type="text" id="locationInput" placeholder="Enter your location">
+                <button id="searchButton">Search</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
