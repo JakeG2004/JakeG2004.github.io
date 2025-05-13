@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
 
+/* GLOBAL box-sizing fix */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Cascadia Mono", sans-serif;
     background-color: #f0f0f0;
@@ -22,11 +27,13 @@ body {
     display: flex;
     align-items: flex-start; /* Vertically aligns items in the center */
     gap: 10px; /* Adds space between the input and the button */
+    margin: 20px;
 }
 
 .search-container input[type="text"] {
     flex: 1;
     margin: 0;
+    min-width: 0;
 }
 
 .search-container button {
@@ -64,7 +71,7 @@ button {
 
 .weather-info {
     background-color: rgba(255, 255, 255, 0.32);
-    margin-left: 20px;
+    margin: 20px;
     padding-left: 20px;
     padding-right: 20px;
     align-content: center;
@@ -92,7 +99,7 @@ button {
 
 .forecast-info {
     background-color: rgba(255, 255, 255, 0.32);
-    margin-left: 20px;
+    margin: 20px;
     padding-left: 20px;
     padding-right: 20px;
     align-content: center;
@@ -135,3 +142,63 @@ button {
     right: 0;
     width: 33%
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        height: auto;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .split {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .forecast-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .forecast-item {
+        width: 90%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+
+    .weather-icon,
+    .forecast-icon {
+        width: 64px;
+        height: 64px;
+    }
+
+    .temp,
+    .description,
+    .wind-speed {
+        font-size: 28px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-container input[type="text"],
+    .search-container button {
+        width: 100%;
+    }
+    .weather-info,
+    .forecast-info {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
