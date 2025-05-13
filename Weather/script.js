@@ -27,6 +27,7 @@ fetchWeather("Spokane");
 searchButton.addEventListener('click', () => {
     const location = locationInput.value;
     if(location) {
+        console.log("Got location!");
         fetchWeather(location);
     }
 })
