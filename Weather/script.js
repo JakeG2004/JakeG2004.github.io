@@ -5,7 +5,7 @@ dotenv.config();*/
 
 // Define the API url
 const API_KEY = "8aef96718d504c27a6980827251105";
-const apiBaseURL = `http://api.weatherapi.com/v1/forecast.json`;
+const apiBaseURL = `https://api.weatherapi.com/v1/forecast.json`;
 
 // Get the source elements from the HTML page
 const locationInput = document.getElementById('locationInput');
