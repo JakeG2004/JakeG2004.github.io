@@ -222,3 +222,11 @@ body {
     margin: 0 auto; /* Center the div horizontally */
     padding: 0 20px; /* Add padding as needed */
 }
+
+.card-img-top {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin: 0 auto; /* centers inside text-center */
+}
