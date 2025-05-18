@@ -1,8 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
 body {
+    color: white;
     background-color: black;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.audio-player {
-    width: 300px;
-    margin: 20px;
+.centered {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
 }
+
+.info-text {
+    color: white;
+}
+
+.shrimp-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start; /* keeps shrimp bottoms aligned */
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.shrimp-row img {
+    height: 256px;             /* Start height, will be changed via JS */
+}
+
+button, input {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 10px;
+}
+
