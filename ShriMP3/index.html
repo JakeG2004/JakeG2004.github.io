@@ -1,0 +1,45 @@
+<!--
+Following tutorial: https://dev.to/ctrlcoding/how-to-create-a-simple-audio-player-in-html-javascript-and-css-4l2e
+
+Author: Jake Gendreau
+Date:   5/18/25
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShriMP3</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!-- Scaler slider to adjust the shrimp growth -->
+        <div class="scaler-slider">
+            <input type="range" id="scaler" name="scaler" min="1" max="2" value="1" step="0.1"/>
+            <label for="scaler">Scaler</label>
+        </div>
+
+        <!-- Hidden audio player -->
+        <div class="audio-player">
+            <audio hidden id="audio" controls crossorigin="anonymous">
+                <source src="./shrimp.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Playback controls -->
+        <div class="playback">
+            <input type="file" id="inputFile" name="inputFile" accept=".mp3">
+            <br>
+            <button data-playing="false" role="switch" aria-checked="false">
+                <span>Play/Pause</span>
+            </button>
+        </div>
+
+        <!-- The shrimp image -->
+        <div class="shrimp">
+            <img id="shrimp" name="shrimp" src="shrimp.png" width="512" height="512">
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
