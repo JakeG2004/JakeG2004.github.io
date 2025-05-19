@@ -6,7 +6,8 @@ let bufferLen;
 let dataArr;
 
 // Playback elements
-const playButton = document.querySelector("button");
+const playButton = document.getElementById("playButton");
+const restartButton = document.getElementById("restartButton")
 const audioElement = document.getElementById("audio");
 const scaler = document.getElementById("scaler");
 
@@ -43,6 +44,9 @@ fileUpload.addEventListener("change", () => {
   }
 });
 
+restartButton.addEventListener("click", () => {
+  audioElement.currentTime = 0;
+})
 
 playButton.addEventListener("click", () => {
   if (!audioContext) {

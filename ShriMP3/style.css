@@ -22,13 +22,13 @@ body {
 .shrimp-row {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start; /* keeps shrimp bottoms aligned */
+    align-items: flex-start;
     width: 100%;
     margin-top: 2rem;
 }
 
 .shrimp-row img {
-    height: 256px;             /* Start height, will be changed via JS */
+    height: 256px;
 }
 
 button, input {
