@@ -1,3 +1,8 @@
+:root {
+    --brand-primary: #b446b4;
+    --brand-secondary: #f4dff7;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -20,6 +25,10 @@ body {
 }
 .navbar-collapse {
     justify-content: flex-end;
+}
+.current-page {
+    background-color: var(--brand-secondary);
+    color: #000;
 }
 .header {
     background-image: url('');
@@ -216,4 +225,24 @@ body {
     background:#b446b4;
     border-radius: 0;
     color:#fff;
+}
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: var(--brand-primary);
+   color: white;
+   text-align: center;
+}
+
+footer a{
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer a:hover{
+    color: #000;
 }

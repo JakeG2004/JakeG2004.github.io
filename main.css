@@ -1,11 +1,17 @@
+:root {
+    --brand-primary: #b446b4;
+    --brand-secondary: #f4dff7;
+}
+
 body {
     padding: 0;
     margin: 0;
-    background: #f4dff7;
+    background: var(--brand-secondary);
     font-family: 'IBM Plex Mono';font-size: 22px;
 }
 .navbar {
-    background:#b446b4;
+    background: var(--brand-primary);
+    z-index: 1000;
 }
 .nav-link,
 .navbar-brand {
@@ -22,7 +28,11 @@ body {
     justify-content: flex-end;
 }
 .custom-nav .nav-item .nav-link {
-    color: #b446b4;
+    color: var(--brand-primary);
+}
+.current-page {
+    background-color: var(--brand-secondary);
+    color: #000;
 }
 .custom-container {
     min-width: 60%; /* Adjust the width as needed */
@@ -31,6 +41,7 @@ body {
     background-image: url('Images/bg.png');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed; /* makes it float */
     position: relative;
 }
 .overlay {
@@ -40,6 +51,8 @@ body {
     left: 0;
     top: 0;
     background: rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+    z-index: 0;
 }
 .description {
 	left: 50%;
@@ -50,14 +63,10 @@ body {
 }
 .description h1 {
     display: inline-block;
-	color: #b446b4;
+	color: var(--brand-primary);
     background: rgba(0, 0, 0, 0.6);
 }
-.description label {
-    display: inline-block;
-	color: #b446b4;
-    background: rgba(0, 0, 0, 0.6);
-}
+
 .description p {
 	color: #fff;
 	font-size: 1.3rem;
@@ -65,9 +74,10 @@ body {
     display: inline-block;
     background: rgba(0, 0, 0, 0.6);
 }
+
 .description button {
-    border:1px solid #b446b4;
-    background:#b446b4;
+    border:1px solid var(--brand-primary);
+    background:var(--brand-primary);
     border-radius: 0;
     color:#fff;
 }
@@ -99,8 +109,8 @@ body {
 	border-radius: 0;
 }
 .features .btn {
-    background-color: #b446b4;
-    border: 1px solid #b446b4;
+    background-color: var(--brand-primary);
+    border: 1px solid var(--brand-primary);
     color: #fff;
     margin-top: 20px;
 }
@@ -229,4 +239,49 @@ body {
 	object-fit: cover;
 	border-radius: 50%;
 	margin: 0 auto; /* centers inside text-center */
+}
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: var(--brand-primary);
+   color: white;
+   text-align: center;
+}
+
+footer a{
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer a:hover{
+    color: #000;
+}
+
+.custom-form {
+    background-color: var(--brand-secondary);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-row label {
+    text-align: left;
+}
+
+.form-row input {
+    width: 100%;
+    padding: 6px;
 }

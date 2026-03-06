@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Contact Jake</title>
+        <title>Login</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -41,38 +41,32 @@
         <header class="page-header header container-fluid">
             <div class="overlay"></div>
             <div class="description">
-                <form style="padding-top: 100px;" action="https://formspree.io/f/xgegrgko" method="POST">
-                    <div>
-                        <h1><label for="email">Your email:</label></h1>
-                    </div>
-            
-                    <div>
-                        <input type="email" id="email" name="email" style="width: 100%; min-width: 500px;">
-                    </div>
-            
-                    <br>
-            
-                    <div>
-                        <h1><label for="message">Your message:</label></h1>
-                    </div>
-            
-                    <div>
-                        <textarea id="message" name="message" style="width: 100%; max-width: 500px; height: 150px;"></textarea>
+                <form class="custom-form">
+                    <h2><strong>Login</strong></h2>
+
+                    <div class="form-row">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="username">
                     </div>
 
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="password">
+                    </div>
+
+                    <button type="submit">Login</button>
                     <br>
 
-                    <button class="btn btn-outline-secondary btn-lg" type="submit">Send</button>
+                    <p class="login-text" style="background: rgba(0, 0, 0, 0); color: #000;">
+                        Don't have an account? <a href="signup.html">Sign up!</a>
+                    </p>
+                    <br>
+                    <h1 style="background: rgba(0, 0, 0, 0); color: #000;"">Why Login / Sign up?</h1>
+                    <p style="background: rgba(0, 0, 0, 0); color: #000;">
+                        Signing up allows you to access exclusive features, be on my mailing list, and keep up to date
+                        on what Jake Gendreau is doing.
+                    </p>
                 </form>
-                <br>
-                <iframe
-                    width="600"
-                    height="400"
-                    style="border:0;"
-                    loading="lazy"
-                    allowfullscreen
-                    src="https://maps.google.com/maps?width=600&height=400&hl=en&q=University%20of%20Idaho&t=&z=14&ie=UTF8&iwloc=B&output=embed">
-                </iframe>
             </div>
         </header>
 

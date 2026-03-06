@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
     <style>
         body, html {
@@ -21,22 +21,25 @@
         <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="main-navigation">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
-                </li>                
-            </ul>
-        </div>
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" id="index" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="projects" href="projects.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="login" href="login.html">Login / Signup</a>
+                    </li>
+                </ul>
+            </div>
     </nav>
 
     <div class="Centered">
@@ -97,24 +100,13 @@
             </p>
         </div>
     </div>
-
-    <div class="container features">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <h3 class="feature-title">My GitHub</h3>
-                <a href="https://github.com/JakeG2004"><img src="Images/github.png" class="img-fluid"></a>
-            </div>
-            
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <h3 class="feature-title">My itch</h3>
-                <a href="https://socksnsandles.itch.io/"><img src="Images/itch.png" class="img-fluid"></a>
-            </div>
-            
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <h3 class="feature-title">My Instagram</h3>
-                <a href="https://www.instagram.com/socks_n_software/"><img src="Images/insta.png" class="img-fluid"></a>
-            </div>
-        </div>
-    </div> 
+    <hr>
+    <hr>
+    <footer>
+        <a href="policies.html">Terms and Conditions</a>
+        <a href="policies.html">Privacy Policy</a>
+        <a href="policies.html">Cookies Policy</a>
+    </footer>
+<script src="main.js"></script>
 </body>
 </html>
